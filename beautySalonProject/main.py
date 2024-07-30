@@ -4,6 +4,7 @@ from PyQt6.QtGui import QPixmap
 from PyQt6 import QtCore
 from PyQt6.uic import loadUi
 
+
 class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
@@ -30,7 +31,8 @@ class MainWindow(QMainWindow):
     def set_label_pixmap(self, image_path, label):
         if label is not None:
             pixmap = QPixmap(image_path)
-            label.setPixmap(pixmap.scaled(label.size(), QtCore.Qt.AspectRatioMode.KeepAspectRatio, QtCore.Qt.TransformationMode.SmoothTransformation))
+            label.setPixmap(pixmap.scaled(label.size(), QtCore.Qt.AspectRatioMode.KeepAspectRatio,
+                                          QtCore.Qt.TransformationMode.SmoothTransformation))
             label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         else:
             print(f"Label not found for path: {image_path}")
@@ -55,6 +57,7 @@ class MainWindow(QMainWindow):
 
     def book_appointment(self):
         print("Book appointment")
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

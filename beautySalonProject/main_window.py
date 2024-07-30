@@ -15,9 +15,9 @@ class Ui_MainWindow(object):
         MainWindow.resize(800, 600)
         MainWindow.setMaximumSize(QtCore.QSize(800, 600))
         MainWindow.setStyleSheet("QMainWindow {\n"
-"    background-color:rgb(252, 234, 255);\n"
-"}\n"
-"")
+                                 "    background-color:rgb(252, 234, 255);\n"
+                                 "}\n"
+                                 "")
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.cosmetics_label = QtWidgets.QLabel(parent=self.centralwidget)
