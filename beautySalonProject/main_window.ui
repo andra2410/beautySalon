@@ -21,8 +21,10 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QMainWindow {
-    background-color:rgb(252, 234, 255);
-}
+   background-image: url(:/static/bck.jpeg);
+   background-repeat: no-repeat;
+   background-position: center;
+    }
 </string>
   </property>
   <widget class="QWidget" name="centralwidget">
